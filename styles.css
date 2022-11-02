@@ -6,3 +6,29 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+div {
+  display: inline-block;
+  position: absolute;
+  left: calc(50% - 250px);
+  top: calc(50% - 250px);
+  border: 1px solid rgba(255, 51, 0, 0.6);
+  width: 500px;
+  height: 500px;
+  animation: spin 18s linear 0.2s infinite;
+  transform: scale(0) rotate(12deg);
+  border-radius: 25%;
+}
+
+body:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
