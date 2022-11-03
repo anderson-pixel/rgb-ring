@@ -21,7 +21,6 @@ div:nth-child(1) {
 }
 
 
-
 body:hover {
   animation-play-state: paused;
 }
