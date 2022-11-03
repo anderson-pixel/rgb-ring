@@ -1,13 +1,13 @@
 body {
-    margin: 0;
-    background: #040404;
-    overflow: hidden;
-    transform: translateZ(0px);
-    width: 100vw;
-    height: 100vh;
+  margin: 0;
+  background: #040404;
+  overflow: hidden;
+  transform: translateZ(0px);
+  width: 100vw;
+  height: 100vh;
 }
 
-div {
+div:nth-child(1) {
   display: inline-block;
   position: absolute;
   left: calc(50% - 250px);
@@ -20,15 +20,44 @@ div {
   border-radius: 25%;
 }
 
+
+
 body:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
   }
+}
+a {
+  position: fixed;
+  font-size: 40px;
+  font-weight: 900;
+  color: cyan;
+  font-family: Arial, Helvatica;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 100vh;
+  text-decoration: none;
+}
+
+
+.a1 {
+position: fixed;
+font-size: 16px;
+font-weight: 900;
+color: cyan;
+font-family: Arial, Helvatica;
+display: block;
+width: 10%;
+height: 100%;
+text-align: center;
+line-height: 16vh;
+}
